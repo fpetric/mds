@@ -70,6 +70,7 @@ for iRho = 0 : 0
             scatter(linspace(1,n,n), vec(:,c), '.', 'markeredgecolor', col{c});
             axis([1, n, 26, 36])
         end
+        suptitle(strcat('iGraph = ', num2str(iGraph)));
     end
     disp(strcat('graph: ', num2str(iGraph), ', rho = ', num2str(rho)));
     disp(strcat('cor:',num2str(correct),',so:',num2str(subopt),',inc:',num2str(incorrect)))
